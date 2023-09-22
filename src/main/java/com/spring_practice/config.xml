@@ -5,8 +5,9 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-   <bean class="com.spring_practice.Asad" id="Asad">
+   <bean class="com.spring_practice.Azhar" id="person">
    	
    </bean>
+   
 
 </beans>
