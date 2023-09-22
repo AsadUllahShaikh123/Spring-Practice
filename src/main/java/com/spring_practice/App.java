@@ -1,9 +1,17 @@
 package com.spring_practice;
 
-public class App 
-{
-    public static void main( String[] args )
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class App {
+	public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        ApplicationContext context = new ClassPathXmlApplicationContext("com/spring_practice/config.xml");
+        
+        Azhar asad= context.getBean("person",Azhar.class);
+       
+       
+       asad.sleep();
+     
     }
 }
