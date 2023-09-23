@@ -6,9 +6,8 @@ public class Student {
 
 	private int id;
 	private String name;
-	@Autowired
-	private Address address;
 	
+	private Address address;
 	public int getId() {
 		return id;
 	}
@@ -26,6 +25,8 @@ public class Student {
 	public Address getAddress() {
 		return address;
 	}
+	
+	@Autowired
 	public void setAddress(Address address) {
 		System.out.println("Addreess Setter");
 		this.address = address;
