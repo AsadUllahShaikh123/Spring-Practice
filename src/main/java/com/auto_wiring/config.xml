@@ -9,15 +9,33 @@
 	<!-- We have to enable annotations for our spring application -->
 	<context:annotation-config />
 	
-	<!-- bean definitions here -->
+	
+	
+	<!-- 
 	<bean class="com.auto_wiring.Address" id="address">
 		<property name="city" value="moro"/>
 		<property name="state" value="sindh"/>
 	</bean>
+
 	<bean class="com.auto_wiring.Student" id="std1" autowire="byName">
 		<property name="id" value="1" />
 		<property name="name" value="Asad" />
 		
 	</bean>
-
+	-->
+	
+	
+	
+	<bean class="com.auto_wiring.Address" id="add">
+		<property name="city" value="moro"/>
+		<property name="state" value="sindh"/>
+	</bean>
+	
+	<bean class="com.auto_wiring.Student" id="std1" autowire="byType">
+		<property name="id" value="1" />
+		<property name="name" value="Asad" />
+	</bean>
+	
+	
+	
 </beans> 
