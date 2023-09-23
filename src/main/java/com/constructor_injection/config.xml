@@ -4,7 +4,7 @@
 
 	<!-- bean definitions here -->
 	<bean class="com.constructor_injection.Student" id="std1">
-		<constructor-arg value="1" />
+		<constructor-arg value="1" type="int" index="0"/>
 		<constructor-arg value="Asad" />
 	</bean>
 
