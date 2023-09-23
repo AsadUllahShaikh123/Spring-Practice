@@ -15,6 +15,11 @@
 		<property name="state" value="sindh"/>
 	</bean>
 	
+	<bean class="com.auto_wiring.ann.Address" id="add1">
+		<property name="city" value="Jamshoro"/>
+		<property name="state" value="sindh"/>
+	</bean>
+	
 	<bean class="com.auto_wiring.ann.Student" id="std1" >
 		<property name="id" value="1" />
 		<property name="name" value="Asad" />

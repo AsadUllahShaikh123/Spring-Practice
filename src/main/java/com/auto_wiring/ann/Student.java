@@ -1,13 +1,21 @@
 package com.auto_wiring.ann;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Student {
 
 	private int id;
 	private String name;
-	
+	@Autowired
+	@Qualifier("add1")
 	private Address address;
+	
+	
+//	public Student(Address address) {
+//		System.out.println("constructor Auto Wired");
+//		this.address = address;
+//	}
 	public int getId() {
 		return id;
 	}
@@ -26,7 +34,6 @@ public class Student {
 		return address;
 	}
 	
-	@Autowired
 	public void setAddress(Address address) {
 		System.out.println("Addreess Setter");
 		this.address = address;
