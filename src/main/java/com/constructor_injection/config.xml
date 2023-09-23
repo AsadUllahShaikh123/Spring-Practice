@@ -9,7 +9,7 @@
 		<constructor-arg value="Java Developer"/>
 	</bean>
 	
-	<bean class="com.constructor_injection.Student" id="std1">
+	<bean class="com.constructor_injection.Student" id="std1" init-method="init" destroy-method="destroy">
 		<constructor-arg value="1" type="int" index="0"/>
 		<constructor-arg value="Asad" />
 		<constructor-arg value="Moro"/>
@@ -20,7 +20,7 @@
 				<value>Python</value>
 			</list>
 		</constructor-arg>
-		<constructor-arg ref="certificate"/>
+		<constructor-arg ref="certificate"/>	
 		
 	</bean>
 

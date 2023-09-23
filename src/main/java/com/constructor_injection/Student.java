@@ -41,6 +41,12 @@ public class Student {
 				+ ", certificate=" + certificate + "]";
 	}
 
+	public void init() {
+		System.out.println("Hello from Init Method ");
+	}
+	public void destroy() {
+		System.out.println("Destroy Method()");
+	}
 	
 
 }
