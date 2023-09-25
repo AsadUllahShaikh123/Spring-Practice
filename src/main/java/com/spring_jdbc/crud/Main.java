@@ -14,7 +14,7 @@ public class Main {
 		
 		JdbcTemplate jdbc = context.getBean("jdbc",JdbcTemplate.class);
 		
-		// ============== insert Option  ============= 
+		// ============== insert Operation  ============= 
 		
 //		String sql = "insert into student (name, address) values(?,?)";
 //		
@@ -22,6 +22,13 @@ public class Main {
 //		System.out.print("inserted " + inserted);
 		
 		
+		// =========== Update operation ===========
+		
+//		String sql = "update student set name =?, address =? where id =? ";
+//		
+//		int updated = jdbc.update(sql,"Asadullah","moro",1);
+//		
+//		System.out.print("updated : " + updated);
 		
 	}
 }
