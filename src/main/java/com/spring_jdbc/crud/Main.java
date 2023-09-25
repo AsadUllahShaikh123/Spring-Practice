@@ -65,7 +65,10 @@ public class Main {
 //		System.out.println();		
 //		
 //		}
+		String sql = " select * from student where id = ? ";
 		
+		Student student = jdbc.queryForObject(sql,rowMapper,2);
+		System.out.print(student.getId()+" " + student.getName() + " "+ student.getAddress());
 		
 	}
 }
