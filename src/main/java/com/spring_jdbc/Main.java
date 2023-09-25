@@ -12,6 +12,11 @@ public class Main {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/spring_jdbc/config.xml");
 		
 		JdbcTemplate jdbc = context.getBean("jdbc_template",JdbcTemplate.class);
-		System.out.print(jdbc.getDataSource().getConnection());
+		
+		String sql = "insert into student (name, address) values (?,?)";
+		
+		int inserted = jdbc.update(sql, "Asad","Moro");
+		
+		System.out.println("Data inserted " + inserted);
 	}
 }
