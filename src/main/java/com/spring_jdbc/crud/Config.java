@@ -24,4 +24,10 @@ public class Config {
 		JdbcTemplate template = new JdbcTemplate(getDataSource());
 		return template;
 	}
+	
+	@Bean(name="std_dao")
+	public StudentDao getStudentDao() {
+		StudentDao dao = new StudentDao(getJdbcTemplate());
+		return dao;
+	}
 }
