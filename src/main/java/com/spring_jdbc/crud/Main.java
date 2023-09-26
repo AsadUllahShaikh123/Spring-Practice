@@ -9,8 +9,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
-import com.spring_jdbc.Student;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -45,6 +43,8 @@ public class Main {
 		
 //		String sql = " select * from student " ;
 //		
+		// Row Mapper class will be same for both 
+		
 		RowMapper<Student> rowMapper = new RowMapper<Student>() {
 
 			public Student mapRow(ResultSet rs, int rowNum) throws SQLException {
@@ -65,6 +65,10 @@ public class Main {
 //		System.out.println();		
 //		
 //		}
+		
+		
+		// ========= Fetched Data for Single Student =================
+		
 		String sql = " select * from student where id = ? ";
 		
 		Student student = jdbc.queryForObject(sql,rowMapper,2);

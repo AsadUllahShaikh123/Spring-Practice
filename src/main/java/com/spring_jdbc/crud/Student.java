@@ -1,4 +1,4 @@
-package com.spring_jdbc;
+package com.spring_jdbc.crud;
 
 public class Student {
 
