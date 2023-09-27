@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
@@ -12,11 +13,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class StudentDao {
 
+	@Autowired
 	private JdbcTemplate jdbc;
 
-	public StudentDao(JdbcTemplate jdbc) {
-		this.jdbc = jdbc;
-	}
+//	public StudentDao(JdbcTemplate jdbc) {
+//		this.jdbc = jdbc;
+//	}
 
 	public int insert(Student student) {
 		int inserted = 0;

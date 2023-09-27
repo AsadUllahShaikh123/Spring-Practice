@@ -27,7 +27,7 @@ public class Config {
 	
 	@Bean(name="std_dao")
 	public StudentDao getStudentDao() {
-		StudentDao dao = new StudentDao(getJdbcTemplate());
+		StudentDao dao = new StudentDao();
 		return dao;
 	}
 }
