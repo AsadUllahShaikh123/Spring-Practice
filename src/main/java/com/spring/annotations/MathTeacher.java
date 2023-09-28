@@ -7,9 +7,7 @@ import org.springframework.stereotype.Component;
 @Primary
 public class MathTeacher implements Teacher{
 
-	public MathTeacher() {
-		System.out.println("Teacher Constructor ");
-	}
+	
 	public void teach() {
 		System.out.println("Math Teacher teaches Math Subject ");		
 	}
