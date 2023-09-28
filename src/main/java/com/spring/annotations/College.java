@@ -1,4 +1,4 @@
-package com.annotations;
+package com.spring.annotations;
 
 import org.springframework.stereotype.Component;
 
@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 public class College {
 
 	public College() {
-		System.out.println("Constructor ...");
+		System.out.println("Constructor inside College ...");
 	}
+	
 }
