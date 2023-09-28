@@ -4,8 +4,19 @@
 
 	<!-- bean definitions here -->
 	
+	<bean id="father" class="com.selenium.Father">
+		<property name="son" ref="son"/>
+	</bean>
+	<bean id="son" class="com.selenium.Son">
+		
+	</bean>
 	<bean id="person" class="com.selenium.Teacher">
 	
 	</bean>
+	
+	<bean id="student" class="com.selenium.Student">
+		<property name="father" ref="father"></property>
+	</bean>
+	
 
 </beans>

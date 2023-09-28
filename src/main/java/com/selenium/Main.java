@@ -7,7 +7,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/selenium/config.xml");
-		Person person = context.getBean("person",Person.class);
-		person.qualification();
+//		Person person = context.getBean("person",Person.class);
+//		person.qualification();
+		
+		
 	}
 }
