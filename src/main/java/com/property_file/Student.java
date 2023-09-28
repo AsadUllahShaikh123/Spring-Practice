@@ -1,5 +1,6 @@
 package com.property_file;
 
+
 public class Student {
 
 	private String name;
@@ -14,6 +15,8 @@ public class Student {
 	public String getAddress() {
 		return address;
 	}
+ 
+	
 	public void setAddress(String address) {
 		this.address = address;
 	}
