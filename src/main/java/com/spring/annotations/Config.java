@@ -7,9 +7,15 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class Config {
 	
-	@Bean(name= {"college","getCollege"})
+
+	@Bean
+	public Principal getPrincipal() {
+		return new Principal();
+	}
+	
+	@Bean
 	public College getCollege() {
-		return new College();
+		return new College(getPrincipal());
 	}
 
 }
