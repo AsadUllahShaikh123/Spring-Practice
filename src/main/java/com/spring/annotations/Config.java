@@ -15,7 +15,9 @@ public class Config {
 	
 	@Bean
 	public College getCollege() {
-		return new College(getPrincipal());
+		College college = new College();
+		college.setPrincipal(getPrincipal());
+		return college;
 	}
 
 }
