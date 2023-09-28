@@ -6,6 +6,8 @@ public class College {
 
 	private Principal principal;	
 	
+	private Teacher teacher;
+	
 //	public College(Principal principal) {
 //		this.principal = principal;
 //		principal.pricipalInfo();
@@ -13,9 +15,13 @@ public class College {
 //	}
 	
 	public void setPrincipal(Principal principal) {
-		System.out.println("Setter Injection ...");
 		this.principal = principal;
 		principal.pricipalInfo();
+	}
+	public void setTeacher(Teacher teacher) {
+		
+		this.teacher = teacher;
+		teacher.teach();
 	}
 	
 }

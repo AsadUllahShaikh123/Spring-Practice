@@ -13,10 +13,19 @@ public class Config {
 		return new Principal();
 	}
 	
+    @Bean
+    public MathTeacher getMathTeacher() {
+    	return new MathTeacher();
+    }
+    @Bean
+    public ScienceTeacher getScienceTeacher() {
+    	return new ScienceTeacher();
+    }
 	@Bean
 	public College getCollege() {
 		College college = new College();
 		college.setPrincipal(getPrincipal());
+		college.setTeacher(getScienceTeacher());
 		return college;
 	}
 
